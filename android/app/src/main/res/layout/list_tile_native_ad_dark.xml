@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"/>-->
+<com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:elevation="5dp"
+    android:background="@drawable/layout_bg_dark"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <RelativeLayout
+        android:background="#242527"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        <com.google.android.material.imageview.ShapeableImageView-->
+<!--            android:layout_width="120dp"-->
+<!--            android:id="@+id/iv_list_tile_native_ad_icon"-->
+<!--            app:shapeAppearanceOverlay="@style/roundedCornersImageView"-->
+<!--            android:layout_height="match_parent"-->
+
+<!--            />-->
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/iv_list_tile_native_ad_icon"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/image_bg_dark"
+            android:scaleType="fitXY"
+            tools:background="#EDEDED" />
+        <TextView
+            android:id="@+id/tv_list_tile_native_ad_attribution_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="#F19938"
+            android:text="Ad"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_list_tile_native_ad_attribution_large"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+
+            android:background="#242527"
+            android:gravity="center"
+            android:text="Ad"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/iv_list_tile_native_ad_icon"
+            android:background="#242527"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_list_tile_native_ad_headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeMaxTextSize="100sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:ellipsize="end"
+                android:textColor="#e1e2e6"
+                android:textSize="20sp"
+                tools:text="Headline" />
+
+            <TextView
+                android:id="@+id/tv_list_tile_native_ad_call_to_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/tag_bg_dark"
+                android:padding="5dp"
+                android:text="Ad"
+                android:textSize="11sp"
+                android:textColor="#BDBDBD"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_list_tile_native_ad_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeMaxTextSize="100sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:maxLines="4"
+                android:textColor="#828282"
+                android:textSize="14sp"
+                tools:text="body" />
+
+        </LinearLayout>
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_list_tile_native_ad_call_to_action"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:layout_marginEnd="15dp"-->
+<!--            android:background="@drawable/tag_bg_dark"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="5dp"-->
+<!--            android:text="Ad"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:visibility="visible" />-->
+
+    </RelativeLayout>
+
+
+
+</com.google.android.gms.ads.nativead.NativeAdView>
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<com.google.android.gms.ads.nativead.NativeAdView-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+
+<!--    android:layout_height="match_parent">-->
+
+
+<!--&lt;!&ndash;    <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="match_parent">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/tv_list_tile_native_ad_attribution_small"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:background="#F19938"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Ad"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="#FFFFFF"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="12sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/tv_list_tile_native_ad_attribution_large"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="48dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="48dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_gravity="center_vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginStart="16dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginLeft="16dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:background="#F19938"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Ad"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="#FFFFFF"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:visibility="invisible" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="center_vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="165dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/iv_list_tile_native_ad_icon"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="120dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="match_parent" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/tv_list_tile_native_ad_headline"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginStart="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_alignEnd="@+id/iv_list_tile_native_ad_icon"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/tv_list_tile_native_ad_body"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginStart="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_below="@+id/tv_list_tile_native_ad_headline"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_alignEnd="@+id/iv_list_tile_native_ad_icon"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/tv_list_tile_native_ad_call_to_action"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_alignParentEnd="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:background="#80000000"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:padding="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textColor="@color/backgroundColor"&ndash;&gt;-->
+<!--&lt;!&ndash;                tools:ignore="RelativeOverlap" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;&lt;!&ndash;            android:background="@color/backgroundColor"&ndash;&gt;&ndash;&gt;-->
+
+
+
+
+
+<!--&lt;!&ndash;        </RelativeLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="160dp">-->
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/tv_list_tile_native_ad_attribution_small"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="#F19938"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Ad"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="#FFFFFF"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="12sp" />&ndash;&gt;-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_list_tile_native_ad_icon"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="center_vertical"-->
+
+<!--            android:scaleType="fitXY"-->
+<!--            tools:background="#EDEDED" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_list_tile_native_ad_attribution_large"-->
+<!--            android:layout_width="48dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:background="#F19938"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Ad"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--             />-->
+
+<!--        <LinearLayout-->
+<!--            android:gravity="center"-->
+<!--            android:layout_toEndOf="@id/iv_list_tile_native_ad_icon"-->
+<!--            android:layout_toStartOf="@id/tv_list_tile_native_ad_call_to_action"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_list_tile_native_ad_headline"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ellipsize="end"-->
+<!--                android:lines="1"-->
+<!--                android:maxLines="1"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="16sp"-->
+<!--                tools:text="Headline" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_list_tile_native_ad_body"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ellipsize="end"-->
+<!--                android:lines="1"-->
+<!--                android:maxLines="2"-->
+<!--                android:textColor="#828282"-->
+<!--                android:textSize="14sp"-->
+<!--                tools:text="body" />-->
+
+<!--&lt;!&ndash;            <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/tv_list_tile_native_ad_call_to_action"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:lines="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:maxLines="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textColor="#828282"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="14sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                tools:text="" />&ndash;&gt;-->
+
+<!--        </LinearLayout>-->
+
+<!--        <TextView-->
+<!--                        android:id="@+id/tv_list_tile_native_ad_call_to_action"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:background="#80000000"-->
+<!--                        android:padding="20dp"-->
+<!--                        tools:ignore="RelativeOverlap" />-->
+
+<!--    </RelativeLayout>-->
+
+
+
+<!--</com.google.android.gms.ads.nativead.NativeAdView>-->

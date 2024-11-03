@@ -1,0 +1,106 @@
+name: houzi
+description: Real estate app
+publish_to: 'none'
+
+version: 1.0.0+4
+
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+#  sdk: ">=2.18.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_launcher_icons: 0.9.2
+
+  flutter_localizations:
+    sdk: flutter
+  houzi_package:
+    path: packages/houzi_package
+
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+#  flutter_icons:
+#  run these commands after changing the icon.png in assets/icon
+#  flutter pub get
+#  flutter pub run flutter_launcher_icons:main
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  remove_alpha_ios: true
+
+
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - assets/icon/icon.png
+    - assets/no-internet.png
+    - assets/settings/dummy_property_image.jpg
+    - assets/settings/dummy_property_image_01.jpg
+    - assets/settings/dummy_property_image_02.jpg
+    - assets/settings/dummy_property_image_03.jpg
+    - assets/icon/apple_logo_dark.png
+    - assets/icon/apple_logo_light.png
+    - assets/icon/facebook_logo.png
+    - assets/icon/google_logo.png
+    - assets/icon/phone_icon.png
+    - assets/icon/whatsapp-logo.png
+    - assets/icon/line.png
+    - assets/icon/telegram.png
+
+    - assets/localization/en_localization.json
+    - assets/localization/ur_localization.json
+    - assets/localization/fr_localization.json
+    - assets/localization/ar_localization.json
+    - assets/localization/ku_localization.json
+    - assets/localization/ru_localization.json
+    - assets/localization/am_localization.json
+    - assets/localization/tr_localization.json
+    - assets/localization/es_localization.json
+    - assets/localization/ro_localization.json
+    - assets/localization/pt_localization.json
+    - assets/localization/fa_localization.json
+    - assets/configurations/configurations.json
+
+
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: fonts/Cairo/Cairo-Bold.ttf
+        - asset: fonts/Cairo/Cairo-Regular.ttf
+        - asset: fonts/Cairo/Cairo-Medium.ttf
+        - asset: fonts/Cairo/Cairo-SemiBold.ttf
+        - asset: fonts/Cairo/Cairo-Light.ttf
+
+    - family: Rubik
+      fonts:
+        - asset: fonts/Rubik/Rubik-Light.ttf
+        - asset: fonts/Rubik/Rubik-Medium.ttf
+        - asset: fonts/Rubik/Rubik-SemiBold.ttf
+        - asset: fonts/Rubik/Rubik-Regular.ttf
+
+    - family: Ubuntu
+      fonts:
+        - asset: fonts/Ubuntu/Ubuntu-Bold.ttf
+        - asset: fonts/Ubuntu/Ubuntu-Light.ttf
+        - asset: fonts/Ubuntu/Ubuntu-Medium.ttf
+        - asset: fonts/Ubuntu/Ubuntu-Regular.ttf
+
+    - family: Qwitcher_Grypen
+      fonts:
+        - asset: fonts/Qwitcher_Grypen/QwitcherGrypen-Bold.ttf
+        - asset: fonts/Qwitcher_Grypen/QwitcherGrypen-Regular.ttf
+

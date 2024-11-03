@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundColor">#25ADDE</color>
+    <string name="facebook_app_id">1122334455667788</string>
+    <string name="facebook_client_token">sample_token</string>
+    <string name="google_maps_api_key">AIzaSyBqQMpR73ry257vNlpmgigNJ73qcKCpuOk</string>
+    <string name="google_ads_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="onesignal_app_id"> </string>
+    <string name="scheme">http</string>
+    <string name="host">domain.com</string>
+    <string name="path_prefix">/property</string>
+</resources>

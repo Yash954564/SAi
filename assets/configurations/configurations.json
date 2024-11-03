@@ -1,0 +1,1818 @@
+{
+  "api_config_version": 1,
+  "show_total_search_type_options": 2,
+  "default_home": "home_1",
+  "default_bottom_navbar_design": "design_02",
+  "default_results_item_design": "design_01",
+  "show_bottom_navbar_add_button": true,
+  "quote": "What are you looking for?",
+  "purchase_code": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "wordpress_url_scheme": "https",
+  "wordpress_url_domain": "builder.ssinfotech.co",
+  "wordpress_url_path": "",
+  "app_name": "sai",
+  "app_terms_url": "https://ssinfotech.co/",
+  "app_privacy_url": "https://houzi.booleanbites.com/privacy.html",
+  "app_terms_of_use_url": "https://ssinfotech.co/",
+  "wordpress_url_gdpr_agreement": "https://ssinfotech.co/",
+  "company_url": "https://booleanbites.com",
+  "primary_color": "#FF1BB1B1",
+  "secondary_color": "#FF1BB1B1",
+  "slider_tint_color": "#FF1BB1B1",
+  "bottom_tab_bar_tint_color": "#FF1BB1B1",
+  "un_selected_bottom_tab_bar_tint_color": "#FF737373",
+  "favourite_icon_tint_color": "#FFF44336",
+  "property_details_email_button_bg_color": "#FF1BB1B1",
+  "property_details_call_button_bg_color": "#FF4CAF50",
+  "property_details_whatsapp_button_bg_color": "#FF25D366",
+  "line_app_button_bg_color": "#FF39CD00",
+  "telegram_button_bg_color": "#FF1C8ADB",
+  "action_button_background_color": "#FF1BB1B1",
+  "app_background_color_light_mode": "#FFFFFFFF",
+  "headings_color_light_mode": "#FF757575",
+  "filter_page_headings_color_light_mode": "#FF757575",
+  "filter_page_place_holder_text_color_light_mode": "#FF212121",
+  "icon_tint_color": "#FF1BB1B1",
+  "filter_page_icon_tint_color_light_mode": "#FF1BB1B1",
+  "selected_item_background_color": "#4D25ADDE",
+  "un_selected_item_background_color": "#FFEEEEEE",
+  "selected_item_text_color": "#FF1BB1B1",
+  "un_selected_item_text_color": "#8A000000",
+  "bottom_tab_bar_background_color_light": "#FFFAFAFA",
+  "property_item_design_container_bg_color_light_mode": "#FFFFFFFF",
+  "featured_label_background_color": "#FFF5F5F5",
+  "featured_tag_border_color_light_mode": "#9925ADDE",
+  "featured_tag_font_color_light_mode": "#FF000000",
+  "tag_background_color": "#FFF5F5F5",
+  "tag_border_color_light_mode": "#1F000000",
+  "tag_font_color_light_mode": "#FF000000",
+  "divider_color_light_mode": "#1F000000",
+  "segment_thumb_color_light": "#FFFFFFFF",
+  "app_background_color_dark_mode": "#FF18191B",
+  "headings_color_dark_mode": "#FFBDBDBD",
+  "filter_page_headings_color_dark_mode": "#FF757575",
+  "filter_page_place_holder_text_color_dark_mode": "#FFFFFFFF",
+  "icon_tint_color_dark_mode": "#FF868A8D",
+  "filter_page_icon_tint_color_dark_mode": "#FF868A8D",
+  "selected_item_background_color_dark_mode": "#FF424242",
+  "un_selected_item_background_color_dark_mode": "#FF757575",
+  "selected_item_text_color_dark_mode": "#FFBDBDBD",
+  "un_selected_item_text_color_dark_mode": "#FF424242",
+  "bottom_tab_bar_background_color_dark": "#FF303030",
+  "property_item_design_container_bg_color_dark_mode": "#FF242527",
+  "featured_tag_background_color_dark_mode": "#FF3A3B3D",
+  "featured_tag_border_color_dark_mode": "#FF000000",
+  "featured_tag_font_color_dark_mode": "#FFBDBDBD",
+  "tag_background_color_dark_mode": "#FF3A3B3D",
+  "tag_border_color_dark_mode": "#1FFFFFFF",
+  "tag_font_color_dark_mode": "#FFBDBDBD",
+  "divider_color_dark_mode": "#1FFFFFFF",
+  "segment_thumb_color_dark": "#FF1BB1B1",
+  "locale_in_url": "Do not change url",
+  "rest_api_properties_route": "properties",
+  "rest_api_agent_route": "agents",
+  "rest_api_agency_route": "agencies",
+  "google_map_api_key": "AIzaSyBqQMpR73ry257vNlpmgigNJ73qcKCpuOk",
+  "lock_places_api": false,
+  "lock_places_api_countries": "PK,FR",
+  "android_native_ad_id": "ca-app-pub-3940256099942544/2247696110",
+  "ios_native_ad_id": "ca-app-pub-3940256099942544/2247696110",
+  "one_signal_app_id": "",
+  "show_ads": false,
+  "show_android_ads": false,
+  "show_ios_ads": false,
+  "show_login_with_facebook": true,
+  "show_login_with_google": true,
+  "show_login_with_apple": true,
+  "show_login_with_phone": true,
+  "use_cupertino_segment_control": true,
+  "show_print_property_button": true,
+  "show_email_button": true,
+  "show_call_button": true,
+  "show_whatsapp_button": true,
+  "show_line_app_button": false,
+  "show_telegram_button": false,
+  "show_download_image_button": true,
+  "enable_html_in_description": true,
+  "enable_html_in_blog_description": true,
+  "show_grid_view_button": true,
+  "show_map_instead_filter": false,
+  "show_theme_related_settings": false,
+  "show_request_demo": true,
+  "show_add_property": true,
+  "default_sort_by": "newest",
+  "home_location_hierarchy_list": [
+    "property_country",
+    "property_state",
+    "property_city",
+    "property_area"
+  ],
+  "sort_first_by": [
+    {
+      "section_type": "featured",
+      "title": "Featured",
+      "default_value": "on",
+      "icon_data": "{\"name\":\"star_outline\",\"fontFamily\":\"MaterialIcons\",\"codePoint\":58877}",
+      "term": null,
+      "sub_term": null
+    },
+    {
+      "section_type": "Term",
+      "title": "Hot Offer",
+      "default_value": "off",
+      "icon_data": "{\"name\":\"local_fire_department_outlined\",\"fontFamily\":\"MaterialIcons\",\"codePoint\":61818}",
+      "term": "property_label",
+      "sub_term": "Hot Offer"
+    }
+  ],
+  "home_layout": [
+    {
+      "section_type": "term",
+      "title": "Explore By Type",
+      "layout_design": "Design # 01",
+      "sub_type": "property_type",
+      "sub_type_value": "all",
+      "section_listing_view": "carousel",
+      "show_featured": false
+    },
+    {
+      "section_type": "term_with_icons",
+      "title": "What are you looking for?",
+      "layout_design": "",
+      "sub_type": "",
+      "sub_type_value": "",
+      "section_listing_view": "",
+      "show_featured": false
+    },
+    {
+      "section_type": "term",
+      "title": "Explore Cities",
+      "layout_design": "Design # 02",
+      "sub_type": "property_city",
+      "sub_type_value": "all",
+      "section_listing_view": "carousel",
+      "show_featured": false
+    },
+    {
+      "section_type": "property",
+      "title": "Featured Properties",
+      "layout_design": "Design # 06",
+      "sub_type": "all",
+      "sub_type_value": "all",
+      "section_listing_view": "carousel",
+      "show_featured": true
+    },
+    {
+      "section_type": "recent_search",
+      "title": "Recent Searches",
+      "layout_design": "",
+      "sub_type": "",
+      "sub_type_value": "",
+      "section_listing_view": "carousel",
+      "show_featured": false
+    },
+    {
+      "section_type": "property",
+      "title": "Latest Properties",
+      "layout_design": "Design # 08",
+      "sub_type": "all",
+      "sub_type_value": "all",
+      "section_listing_view": "list",
+      "show_featured": false
+    },
+    {
+      "section_type": "agents",
+      "title": "Meet Our Agents",
+      "layout_design": "",
+      "sub_type": "agents",
+      "sub_type_value": "",
+      "section_listing_view": "carousel",
+      "show_featured": false
+    },
+    {
+      "section_type": "agencies",
+      "title": "Meet Our Agencies",
+      "layout_design": "",
+      "sub_type": "agencies",
+      "sub_type_value": "",
+      "section_listing_view": "carousel",
+      "show_featured": false
+    },
+    {
+      "section_type": "ad",
+      "title": "Ad View",
+      "layout_design": "",
+      "sub_type": "",
+      "sub_type_value": "",
+      "section_listing_view": "",
+      "show_featured": false
+    }
+  ],
+  "bottom_navigation_bar_layout": [
+    {
+      "section_type": "home",
+      "title": "Home",
+      "url": null,
+      "check_login": false,
+      "sub_type_list": null,
+      "sub_type_value_list": null,
+      "search_api_map": {},
+      "icon_data": "{\"name\":\"home_rounded\",\"fontFamily\":\"MaterialIcons\",\"codePoint\":63477}"
+    },
+    {
+      "section_type": "search",
+      "title": "Search",
+      "url": null,
+      "check_login": false,
+      "sub_type_list": null,
+      "sub_type_value_list": null,
+      "search_api_map": {},
+      "icon_data": "{\"name\":\"search\",\"fontFamily\":\"MaterialIcons\",\"codePoint\":58727}"
+    },
+    {
+      "section_type": "savedSearches_favourites",
+      "title": "Saved",
+      "url": null,
+      "check_login": true,
+      "sub_type_list": null,
+      "sub_type_value_list": null,
+      "search_api_map": {},
+      "icon_data": "{\"name\":\"bookmark_border\",\"fontFamily\":\"MaterialIcons\",\"codePoint\":57588}"
+    },
+    {
+      "section_type": "profile",
+      "title": "Profile",
+      "url": null,
+      "check_login": false,
+      "sub_type_list": null,
+      "sub_type_value_list": null,
+      "search_api_map": {},
+      "icon_data": "{\"name\":\"person\",\"fontFamily\":\"MaterialIcons\",\"codePoint\":58513}"
+    }
+  ],
+  "filter_page_layout": [
+    {
+      "section_type": "term_picker",
+      "title": "I want to",
+      "data_type": "property_status",
+      "api_value": "status[]",
+      "picker_type": "tabs and chips",
+      "picker_sub_type": null,
+      "show_search_by_city": true,
+      "show_search_by_location": true,
+      "min_range_value": "0",
+      "max_range_value": "0",
+      "div_range_value": "1000",
+      "options": null,
+      "unique_key": null,
+      "query_type": null,
+      "default_radius": null,
+      "location_hierarchy_list": []
+    },
+    {
+      "section_type": "sequential_location_picker",
+      "title": "Location",
+      "data_type": "property_area",
+      "api_value": "area",
+      "picker_type": "full_screen",
+      "picker_sub_type": null,
+      "show_search_by_city": true,
+      "show_search_by_location": true,
+      "min_range_value": "0",
+      "max_range_value": "1000000",
+      "div_range_value": "1000",
+      "options": null,
+      "unique_key": null,
+      "query_type": null,
+      "default_radius": "50",
+      "location_hierarchy_list": [
+        "property_country",
+        "property_state",
+        "property_city",
+        "property_area"
+      ]
+    },
+    {
+      "section_type": "term_picker",
+      "title": "Property Types",
+      "data_type": "property_type",
+      "api_value": "type[]",
+      "picker_type": "tabs and chips",
+      "picker_sub_type": null,
+      "show_search_by_city": true,
+      "show_search_by_location": true,
+      "min_range_value": "0",
+      "max_range_value": "0",
+      "div_range_value": "1000",
+      "options": null,
+      "unique_key": null,
+      "query_type": null,
+      "default_radius": null,
+      "location_hierarchy_list": []
+    },
+    {
+      "section_type": "range_picker",
+      "title": "Price range",
+      "data_type": "price",
+      "api_value": "max-price",
+      "picker_type": "range slider",
+      "picker_sub_type": null,
+      "show_search_by_city": true,
+      "show_search_by_location": true,
+      "min_range_value": "0",
+      "max_range_value": "1000000",
+      "div_range_value": "1000",
+      "options": null,
+      "unique_key": null,
+      "query_type": null,
+      "default_radius": null,
+      "location_hierarchy_list": []
+    },
+    {
+      "section_type": "range_picker",
+      "title": "Area range",
+      "data_type": "area",
+      "api_value": "max-area",
+      "picker_type": "range slider",
+      "picker_sub_type": null,
+      "show_search_by_city": true,
+      "show_search_by_location": true,
+      "min_range_value": "0",
+      "max_range_value": "1000000",
+      "div_range_value": "1000",
+      "options": null,
+      "unique_key": null,
+      "query_type": null,
+      "default_radius": null,
+      "location_hierarchy_list": []
+    },
+    {
+      "section_type": "string_picker",
+      "title": "Bedrooms",
+      "data_type": "bedrooms",
+      "api_value": "bedrooms",
+      "picker_type": "chips",
+      "picker_sub_type": null,
+      "show_search_by_city": true,
+      "show_search_by_location": true,
+      "min_range_value": "0",
+      "max_range_value": "0",
+      "div_range_value": "1000",
+      "options": "1,2,3,4,5,6",
+      "unique_key": null,
+      "query_type": null,
+      "default_radius": null,
+      "location_hierarchy_list": []
+    },
+    {
+      "section_type": "string_picker",
+      "title": "Bathrooms",
+      "data_type": "bathrooms",
+      "api_value": "bathrooms",
+      "picker_type": "chips",
+      "picker_sub_type": null,
+      "show_search_by_city": true,
+      "show_search_by_location": true,
+      "min_range_value": "0",
+      "max_range_value": "0",
+      "div_range_value": "1000",
+      "options": "1,2,3,4,5,6",
+      "unique_key": null,
+      "query_type": null,
+      "default_radius": null,
+      "location_hierarchy_list": []
+    },
+    {
+      "section_type": "keyword_picker",
+      "title": "Keyword",
+      "data_type": "keyword",
+      "api_value": "keyword",
+      "picker_type": "text_field",
+      "picker_sub_type": null,
+      "show_search_by_city": true,
+      "show_search_by_location": true,
+      "min_range_value": "0",
+      "max_range_value": "1000000",
+      "div_range_value": "1000",
+      "options": null,
+      "unique_key": null,
+      "query_type": null,
+      "default_radius": null,
+      "location_hierarchy_list": []
+    }
+  ],
+  "drawer_layout": [
+    {
+      "section_type": "blogs",
+      "title": "Blogs",
+      "check_login": false,
+      "enable": true,
+      "expansion_tile_children": null,
+      "data_map": null
+    },
+    {
+      "section_type": "messages",
+      "title": "Messages",
+      "check_login": true,
+      "enable": true,
+      "expansion_tile_children": null,
+      "data_map": null
+    },
+    {
+      "section_type": "add_property",
+      "title": "Add Property",
+      "check_login": true,
+      "enable": true,
+      "expansion_tile_children": null,
+      "data_map": null
+    },
+    {
+      "section_type": "quick_add_property",
+      "title": "Quick Add Property",
+      "check_login": true,
+      "enable": true,
+      "expansion_tile_children": null,
+      "data_map": null
+    },
+    {
+      "section_type": "properties",
+      "title": "Properties",
+      "check_login": true,
+      "enable": true,
+      "expansion_tile_children": null,
+      "data_map": null
+    },
+    {
+      "section_type": "agents",
+      "title": "Agents",
+      "check_login": false,
+      "enable": true,
+      "expansion_tile_children": null,
+      "data_map": null
+    },
+    {
+      "section_type": "agencies",
+      "title": "Agencies",
+      "check_login": false,
+      "enable": true,
+      "expansion_tile_children": null,
+      "data_map": null
+    },
+    {
+      "section_type": "my_agents",
+      "title": "My Agents",
+      "check_login": false,
+      "enable": true,
+      "expansion_tile_children": null,
+      "data_map": null
+    },
+    {
+      "section_type": "request_property",
+      "title": "Property Request",
+      "check_login": true,
+      "enable": true,
+      "expansion_tile_children": null,
+      "data_map": null
+    },
+    {
+      "section_type": "favorites",
+      "title": "Favorites",
+      "check_login": true,
+      "enable": true,
+      "expansion_tile_children": null,
+      "data_map": null
+    },
+    {
+      "section_type": "saved_searches",
+      "title": "Saved Searches",
+      "check_login": true,
+      "enable": true,
+      "expansion_tile_children": null,
+      "data_map": null
+    },
+    {
+      "section_type": "crm_dashboard",
+      "title": "CRM Dashboard",
+      "check_login": true,
+      "enable": true,
+      "expansion_tile_children": null,
+      "data_map": null
+    },
+    {
+      "section_type": "settings",
+      "title": "Settings",
+      "check_login": false,
+      "enable": true,
+      "expansion_tile_children": null,
+      "data_map": null
+    },
+    {
+      "section_type": "request_demo",
+      "title": "Contact Us",
+      "check_login": false,
+      "enable": true,
+      "expansion_tile_children": null,
+      "data_map": null
+    },
+    {
+      "section_type": "login",
+      "title": "Login",
+      "check_login": false,
+      "enable": true,
+      "expansion_tile_children": null,
+      "data_map": null
+    },
+    {
+      "section_type": "logout",
+      "title": "Log Out",
+      "check_login": false,
+      "enable": true,
+      "expansion_tile_children": null,
+      "data_map": null
+    }
+  ],
+  "property_detail_page_layout": [
+    {
+      "widget_type": "article_images",
+      "widget_title": "Property Images",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "article_title",
+      "widget_title": "Title",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "article_address",
+      "widget_title": "Property Address",
+      "widget_enable": false,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "article_status_price",
+      "widget_title": "Status & Price",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "ad",
+      "widget_title": "Ad",
+      "widget_enable": false,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "valued_features",
+      "widget_title": "Features with values",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "article_features_details",
+      "widget_title": "Details",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "article_features",
+      "widget_title": "Features",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "article_description",
+      "widget_title": "Description",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "article_attachments",
+      "widget_title": "Property Documents",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "article_address_info",
+      "widget_title": "Address",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "article_map",
+      "widget_title": "Static Map",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "article_floor_plans",
+      "widget_title": "FloorPlans",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "article_multi_units",
+      "widget_title": "Sub Listings",
+      "widget_enable": true,
+      "widget_view_type": "list"
+    },
+    {
+      "widget_type": "article_contact_information",
+      "widget_title": "Contact Information",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "enquire_info",
+      "widget_title": "Enquire Info",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "setup_tour",
+      "widget_title": "Setup Tour",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "watch_video",
+      "widget_title": "Watch Video",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "virtual_tour",
+      "widget_title": "Virtual Tour",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "article_reviews",
+      "widget_title": "Reviews",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "article_related_posts",
+      "widget_title": "Related Properties",
+      "widget_enable": true,
+      "widget_view_type": "list"
+    }
+  ],
+  "blog_detail_page_layout": [
+    {
+      "widget_type": "blog_images",
+      "widget_title": "Blog Images",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "blog_title",
+      "widget_title": "Title",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "blog_category",
+      "widget_title": "Blog Category",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "blog_author_and_time",
+      "widget_title": "Blog Author and Time",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "blog_content",
+      "widget_title": "Blog Content",
+      "widget_enable": true,
+      "widget_view_type": ""
+    },
+    {
+      "widget_type": "blog_comments",
+      "widget_title": "Comments",
+      "widget_enable": true,
+      "widget_view_type": ""
+    }
+  ],
+  "add_property_layout": [
+    {
+      "enable": true,
+      "title": "Property Information",
+      "allowed_roles": [],
+      "page_fields": [
+        {
+          "enable": true,
+          "section": "Description",
+          "from_fields": [
+            {
+              "api_key": "prop_title",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Property Title",
+              "hint": "Enter your property title",
+              "additional_hint": "",
+              "performValidation": true,
+              "validationType": "stringValidation",
+              "maxLines": 1,
+              "keyboardType": "text",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "prop_des",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Content",
+              "hint": "Description",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "stringValidation",
+              "maxLines": 6,
+              "keyboardType": "text",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "prop_type[]",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formMultiSelectField",
+              "term_type": "property_type",
+              "title": "Type",
+              "hint": "Select",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "prop_status[]",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formMultiSelectField",
+              "term_type": "property_status",
+              "title": "Status",
+              "hint": "Select",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "prop_labels[]",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formMultiSelectField",
+              "term_type": "property_label",
+              "title": "Label",
+              "hint": "Select",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            }
+          ]
+        },
+        {
+          "enable": true,
+          "section": "Price",
+          "from_fields": [
+            {
+              "api_key": "prop_price",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Sale or Rent Price",
+              "hint": "Enter the price",
+              "additional_hint": "",
+              "performValidation": true,
+              "validationType": "stringValidation",
+              "maxLines": 1,
+              "keyboardType": "number",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "prop_price_placeholder",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formPricePlaceHolderField",
+              "term_type": "",
+              "title": "Price Placeholder",
+              "hint": "",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "prop_price_prefix",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Price prefix",
+              "hint": "Enter the price prefix",
+              "additional_hint": "For example: Start from",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "text",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "prop_label",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "After The Price",
+              "hint": "Enter the after price",
+              "additional_hint": "For example: Monthly",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "text",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "prop_sec_price",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Second price (Optional)",
+              "hint": "Enter the second price",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "number",
+              "check_login": null,
+              "field_values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "title": "Property Media",
+      "allowed_roles": [],
+      "page_fields": [
+        {
+          "enable": true,
+          "section": "Media",
+          "from_fields": [
+            {
+              "api_key": "prop_media",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formMediaField",
+              "term_type": "",
+              "title": "",
+              "hint": "",
+              "additional_hint": "",
+              "performValidation": true,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "text",
+              "check_login": null,
+              "field_values": null
+            }
+          ]
+        },
+        {
+          "enable": true,
+          "section": "Video",
+          "from_fields": [
+            {
+              "api_key": "prop_video_url",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Video URL",
+              "hint": "Youtube, Vimeo, SWF File and MOV File are supported",
+              "additional_hint": "For example: https://www.youtube.com/watch?v=40KtYliO_Dg",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "text",
+              "check_login": null,
+              "field_values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "title": "Property Details",
+      "allowed_roles": [],
+      "page_fields": [
+        {
+          "enable": true,
+          "section": "Details",
+          "from_fields": [
+            {
+              "api_key": "prop_beds",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formStepperField",
+              "term_type": "",
+              "title": "Bedrooms",
+              "hint": "",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "number",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "prop_baths",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formStepperField",
+              "term_type": "",
+              "title": "Bathrooms",
+              "hint": "",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "number",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "prop_size",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Area Size",
+              "hint": "Enter area size",
+              "additional_hint": "Only digits",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "number",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "prop_size_prefix",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Size Postfix",
+              "hint": "Enter size postfix",
+              "additional_hint": "For example: Sq Ft",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "text",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "prop_land_area",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Land area",
+              "hint": "Enter land area",
+              "additional_hint": "Only digits",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "number",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "prop_land_area_prefix",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Land Area Size Postfix",
+              "hint": "Enter land area size postfix",
+              "additional_hint": "For example: Sq Ft",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "text",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "prop_garage",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Garages",
+              "hint": "Number of garages",
+              "additional_hint": "Only digits",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "number",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "prop_garage_size",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Garage size",
+              "hint": "Enter garage size",
+              "additional_hint": "For example: 200 Sq Ft",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "text",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "prop_year_built",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Year built",
+              "hint": "Enter year built",
+              "additional_hint": "Only digits",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "number",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "custom_fields",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formCustomField",
+              "term_type": "",
+              "title": "",
+              "hint": "",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            }
+          ]
+        },
+        {
+          "enable": true,
+          "section": "Additional Details",
+          "from_fields": [
+            {
+              "api_key": "additional_features",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formAdditionalDetailsField",
+              "term_type": "",
+              "title": "",
+              "hint": "",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "title": "Property Features",
+      "allowed_roles": [],
+      "page_fields": [
+        {
+          "enable": true,
+          "section": "Features",
+          "from_fields": [
+            {
+              "api_key": "prop_features[]",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formCheckBoxListField",
+              "term_type": "property_feature",
+              "title": "",
+              "hint": "",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "title": "Property Address",
+      "allowed_roles": [],
+      "page_fields": [
+        {
+          "enable": true,
+          "section": "Map",
+          "from_fields": [
+            {
+              "api_key": "map_api_key",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formMapField",
+              "term_type": "",
+              "title": "",
+              "hint": "",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            }
+          ]
+        },
+        {
+          "enable": true,
+          "section": "Location",
+          "from_fields": [
+            {
+              "api_key": "property_map_address",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Address",
+              "hint": "Enter your property address",
+              "additional_hint": "",
+              "performValidation": true,
+              "validationType": "stringValidation",
+              "maxLines": 1,
+              "keyboardType": "text",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "country",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formDropDownField",
+              "term_type": "property_country",
+              "title": "Country",
+              "hint": "Select",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "administrative_area_level_1",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formDropDownField",
+              "term_type": "property_state",
+              "title": "State",
+              "hint": "Select",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "locality",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formDropDownField",
+              "term_type": "property_city",
+              "title": "City",
+              "hint": "Select",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "neighborhood",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formDropDownField",
+              "term_type": "property_area",
+              "title": "Area",
+              "hint": "Select",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "postal_code",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Zip Code",
+              "hint": "Enter the Zip Code",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "text",
+              "check_login": null,
+              "field_values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "title": "Virtual Tour",
+      "allowed_roles": [],
+      "page_fields": [
+        {
+          "enable": true,
+          "section": "360° Virtual Tour",
+          "from_fields": [
+            {
+              "api_key": "virtual_tour",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "",
+              "hint": "Enter virtual tour iframe/embedded code",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 5,
+              "keyboardType": "multiline",
+              "check_login": null,
+              "field_values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "title": "Sub Listings",
+      "allowed_roles": [],
+      "page_fields": [
+        {
+          "enable": true,
+          "section": "Sub Listings",
+          "from_fields": [
+            {
+              "api_key": "fave_multi_units_ids",
+              "enable": true,
+              "allowed_roles": [
+                "administrator"
+              ],
+              "section_type": "multiUnitsIdsField",
+              "term_type": "",
+              "title": "",
+              "hint": "",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            },
+            {
+              "api_key": "fave_multi_units",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "multiUnitsField",
+              "term_type": "",
+              "title": "",
+              "hint": "",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "title": "Floor Plans",
+      "allowed_roles": [],
+      "page_fields": [
+        {
+          "enable": true,
+          "section": "Floor Plans",
+          "from_fields": [
+            {
+              "api_key": "floor_plans",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "floorPlansField",
+              "term_type": "",
+              "title": "",
+              "hint": "",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "title": "Contact Information",
+      "allowed_roles": [
+        "administrator",
+        "houzez_agency"
+      ],
+      "page_fields": [
+        {
+          "enable": true,
+          "section": "Contact Information",
+          "from_fields": [
+            {
+              "api_key": "contact_information",
+              "enable": true,
+              "allowed_roles": [
+                "administrator",
+                "houzez_agency"
+              ],
+              "section_type": "realtorContactInformationField",
+              "term_type": "",
+              "title": "",
+              "hint": "",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "title": "Property Settings",
+      "allowed_roles": [
+        "administrator"
+      ],
+      "page_fields": [
+        {
+          "enable": true,
+          "section": "Property Settings",
+          "from_fields": [
+            {
+              "api_key": "prop_featured",
+              "enable": true,
+              "allowed_roles": [
+                "administrator"
+              ],
+              "section_type": "formRadioButtonField",
+              "term_type": "",
+              "title": "Do you want to mark this property as featured?",
+              "hint": "",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": {
+                "No": "0",
+                "Yes": "1"
+              }
+            },
+            {
+              "api_key": "login-required",
+              "enable": true,
+              "allowed_roles": [
+                "administrator"
+              ],
+              "section_type": "formRadioButtonField",
+              "term_type": "",
+              "title": "The user must be logged in to view this property?",
+              "hint": "",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": {
+                "No": "0",
+                "Yes": "1"
+              }
+            },
+            {
+              "api_key": "fave_property_disclaimer",
+              "enable": true,
+              "allowed_roles": [
+                "administrator"
+              ],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Disclaimer",
+              "hint": "Disclaimer",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 7,
+              "keyboardType": "multiline",
+              "check_login": null,
+              "field_values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "title": "Private Note",
+      "allowed_roles": [],
+      "page_fields": [
+        {
+          "enable": true,
+          "section": "Private Note",
+          "from_fields": [
+            {
+              "api_key": "fave_private_note",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formTextField",
+              "term_type": "",
+              "title": "Write private note for this property, it will not display for public.",
+              "hint": "Enter the note here",
+              "additional_hint": "",
+              "performValidation": false,
+              "validationType": "",
+              "maxLines": 7,
+              "keyboardType": "multiline",
+              "check_login": null,
+              "field_values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "title": "GDPR Agreement",
+      "allowed_roles": [],
+      "page_fields": [
+        {
+          "enable": true,
+          "section": "GDPR Agreement",
+          "from_fields": [
+            {
+              "api_key": "gdpr",
+              "enable": true,
+              "allowed_roles": [],
+              "section_type": "formGDPRAgreementField",
+              "term_type": "",
+              "title": "",
+              "hint": "",
+              "additional_hint": "",
+              "performValidation": true,
+              "validationType": "",
+              "maxLines": 1,
+              "keyboardType": "",
+              "check_login": null,
+              "field_values": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quick_add_property_layout": [
+    {
+      "api_key": "prop_title",
+      "enable": true,
+      "allowed_roles": [],
+      "section_type": "formTextField",
+      "term_type": "",
+      "title": "Property Title",
+      "hint": "Enter your property title",
+      "additional_hint": "",
+      "performValidation": true,
+      "validationType": "stringValidation",
+      "maxLines": 1,
+      "keyboardType": "text",
+      "check_login": null,
+      "field_values": null
+    },
+    {
+      "api_key": "prop_des",
+      "enable": true,
+      "allowed_roles": [],
+      "section_type": "formTextField",
+      "term_type": "",
+      "title": "Content",
+      "hint": "Description",
+      "additional_hint": "",
+      "performValidation": true,
+      "validationType": "stringValidation",
+      "maxLines": 6,
+      "keyboardType": "multiline",
+      "check_login": null,
+      "field_values": null
+    },
+    {
+      "api_key": "prop_price",
+      "enable": true,
+      "allowed_roles": [],
+      "section_type": "formTextField",
+      "term_type": "",
+      "title": "Sale or Rent Price",
+      "hint": "Enter the price",
+      "additional_hint": "",
+      "performValidation": true,
+      "validationType": "stringValidation",
+      "maxLines": 1,
+      "keyboardType": "number",
+      "check_login": null,
+      "field_values": null
+    },
+    {
+      "api_key": "prop_price_placeholder",
+      "enable": true,
+      "allowed_roles": [],
+      "section_type": "formPricePlaceHolderField",
+      "term_type": "",
+      "title": "Price Placeholder",
+      "hint": "",
+      "additional_hint": "",
+      "performValidation": false,
+      "validationType": "",
+      "maxLines": 1,
+      "keyboardType": "",
+      "check_login": null,
+      "field_values": null
+    },
+    {
+      "api_key": "prop_type[]",
+      "enable": true,
+      "allowed_roles": [],
+      "section_type": "formMultiSelectField",
+      "term_type": "property_type",
+      "title": "Type",
+      "hint": "Select",
+      "additional_hint": "",
+      "performValidation": false,
+      "validationType": "",
+      "maxLines": 1,
+      "keyboardType": "",
+      "check_login": null,
+      "field_values": null
+    },
+    {
+      "api_key": "prop_status[]",
+      "enable": true,
+      "allowed_roles": [],
+      "section_type": "formMultiSelectField",
+      "term_type": "property_status",
+      "title": "Status",
+      "hint": "Select",
+      "additional_hint": "",
+      "performValidation": false,
+      "validationType": "",
+      "maxLines": 1,
+      "keyboardType": "",
+      "check_login": null,
+      "field_values": null
+    },
+    {
+      "api_key": "prop_labels[]",
+      "enable": true,
+      "allowed_roles": [],
+      "section_type": "formMultiSelectField",
+      "term_type": "property_label",
+      "title": "Label",
+      "hint": "Select",
+      "additional_hint": "",
+      "performValidation": false,
+      "validationType": "",
+      "maxLines": 1,
+      "keyboardType": "",
+      "check_login": null,
+      "field_values": null
+    },
+    {
+      "api_key": "prop_size",
+      "enable": true,
+      "allowed_roles": [],
+      "section_type": "formTextField",
+      "term_type": "",
+      "title": "Area Size",
+      "hint": "Enter area size",
+      "additional_hint": "Only digits",
+      "performValidation": false,
+      "validationType": "",
+      "maxLines": 1,
+      "keyboardType": "number",
+      "check_login": null,
+      "field_values": null
+    },
+    {
+      "api_key": "prop_size_prefix",
+      "enable": true,
+      "allowed_roles": [],
+      "section_type": "formTextField",
+      "term_type": "",
+      "title": "Size Postfix",
+      "hint": "Enter size postfix",
+      "additional_hint": "For example: Sq Ft",
+      "performValidation": false,
+      "validationType": "",
+      "maxLines": 1,
+      "keyboardType": "text",
+      "check_login": null,
+      "field_values": null
+    },
+    {
+      "api_key": "prop_land_area",
+      "enable": true,
+      "allowed_roles": [],
+      "section_type": "formTextField",
+      "term_type": "",
+      "title": "Land Area",
+      "hint": "Enter land area",
+      "additional_hint": "Only digits",
+      "performValidation": false,
+      "validationType": "",
+      "maxLines": 1,
+      "keyboardType": "number",
+      "check_login": null,
+      "field_values": null
+    },
+    {
+      "api_key": "prop_land_area_prefix",
+      "enable": true,
+      "allowed_roles": [],
+      "section_type": "formTextField",
+      "term_type": "",
+      "title": "Land Area Size Postfix",
+      "hint": "Enter land area size postfix",
+      "additional_hint": "For example: Sq Ft",
+      "performValidation": false,
+      "validationType": "",
+      "maxLines": 1,
+      "keyboardType": "text",
+      "check_login": null,
+      "field_values": null
+    },
+    {
+      "api_key": "property_map_address",
+      "enable": true,
+      "allowed_roles": [],
+      "section_type": "formTextField",
+      "term_type": "",
+      "title": "Address",
+      "hint": "Enter your property address",
+      "additional_hint": "",
+      "performValidation": true,
+      "validationType": "stringValidation",
+      "maxLines": 1,
+      "keyboardType": "text",
+      "check_login": null,
+      "field_values": null
+    },
+    {
+      "api_key": "prop_beds",
+      "enable": true,
+      "allowed_roles": [],
+      "section_type": "formStepperField",
+      "term_type": "",
+      "title": "Bedrooms",
+      "hint": "",
+      "additional_hint": "",
+      "performValidation": false,
+      "validationType": "",
+      "maxLines": 1,
+      "keyboardType": "number",
+      "check_login": null,
+      "field_values": null
+    },
+    {
+      "api_key": "prop_baths",
+      "enable": true,
+      "allowed_roles": [],
+      "section_type": "formStepperField",
+      "term_type": "",
+      "title": "Bathrooms",
+      "hint": "",
+      "additional_hint": "",
+      "performValidation": false,
+      "validationType": "",
+      "maxLines": 1,
+      "keyboardType": "number",
+      "check_login": null,
+      "field_values": null
+    },
+    {
+      "api_key": "prop_media",
+      "enable": true,
+      "allowed_roles": [],
+      "section_type": "formMediaField",
+      "term_type": "",
+      "title": "",
+      "hint": "",
+      "additional_hint": "",
+      "performValidation": true,
+      "validationType": "",
+      "maxLines": 1,
+      "keyboardType": "text",
+      "check_login": null,
+      "field_values": null
+    },
+    {
+      "api_key": "gdpr",
+      "enable": true,
+      "allowed_roles": [],
+      "section_type": "formGDPRAgreementField",
+      "term_type": "",
+      "title": "",
+      "hint": "",
+      "additional_hint": "",
+      "performValidation": true,
+      "validationType": "",
+      "maxLines": 1,
+      "keyboardType": "",
+      "check_login": null,
+      "field_values": null
+    }
+  ]
+}

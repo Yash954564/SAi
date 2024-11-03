@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+
+    <style name="NormalTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+<!--    <style name="roundedCornersImageView" parent="">-->
+<!--&lt;!&ndash;        <item name="cornerFamily">rounded</item>&ndash;&gt;-->
+<!--        <item name="cornerSize">10dp</item>-->
+<!--&lt;!&ndash;        <style name="specific_rounded_corner">&ndash;&gt;-->
+<!--&lt;!&ndash;            <item name="cornerSizeTopLeft">50dp</item>&ndash;&gt;-->
+<!--&lt;!&ndash;            <item name="cornerSizeBottomRight">50dp</item>&ndash;&gt;-->
+<!--&lt;!&ndash;            <item name="cornerFamilyTopLeft">rounded</item>&ndash;&gt;-->
+<!--            <item name="cornerFamilyBottomRight">rounded</item>-->
+<!--&lt;!&ndash;            <item name="cornerFamilyBottomLeft">rounded</item>&ndash;&gt;-->
+<!--            <item name="cornerFamilyTopRight">rounded</item>-->
+<!--&lt;!&ndash;        </style>&ndash;&gt;-->
+<!--    </style>-->
+</resources>

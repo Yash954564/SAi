@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "TEAM_ID_XX.com.domain.app",
+                "paths": [ "/property/*" ]
+            }
+        ]
+    }
+}
