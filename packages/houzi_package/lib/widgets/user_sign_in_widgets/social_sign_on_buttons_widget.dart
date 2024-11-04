@@ -22,8 +22,8 @@ class SocialSignOnButtonWidget extends StatelessWidget {
     required this.iconImagePath,
     required this.onPressed,
     required this.style,
-    this.height = 50.0,
-    this.width = double.infinity,
+    this.height = 63.0,
+    this.width = 63,
     this.bgColor,
     this.iconImageWidth = 30.0,
     this.iconImageHeight = 30.0,
@@ -32,16 +32,17 @@ class SocialSignOnButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if(shortButtonWidget) return ShortSocialLoginButtonWidget(
-      padding: padding,
-      iconImagePath: iconImagePath,
-      onPressed: onPressed,
-      width: width,
-      height: height,
-      bgColor: bgColor,
-      iconImageWidth: iconImageWidth,
-      iconImageHeight: iconImageHeight,
-    );
+    if (shortButtonWidget)
+      return ShortSocialLoginButtonWidget(
+        padding: padding,
+        iconImagePath: iconImagePath,
+        onPressed: onPressed,
+        width: width,
+        height: height,
+        bgColor: bgColor,
+        iconImageWidth: iconImageWidth,
+        iconImageHeight: iconImageHeight,
+      );
 
     return LongSocialLoginButtonWidget(
       padding: padding,
@@ -55,7 +56,6 @@ class SocialSignOnButtonWidget extends StatelessWidget {
     );
   }
 }
-
 
 class LongSocialLoginButtonWidget extends StatelessWidget {
   final String label;
@@ -87,7 +87,7 @@ class LongSocialLoginButtonWidget extends StatelessWidget {
         width: width,
         height: height,
         child: ElevatedButton(
-        // child: OutlinedButton(
+          // child: OutlinedButton(
           onPressed: onPressed,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -106,10 +106,12 @@ class LongSocialLoginButtonWidget extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             side: BorderSide(color: Colors.grey[300]!),
             elevation: 1.0,
-            backgroundColor: bgColor ?? AppThemePreferences().appTheme.primaryColor,
+            backgroundColor:
+                bgColor ?? AppThemePreferences().appTheme.primaryColor,
             surfaceTintColor: Colors.transparent,
             shape: const RoundedRectangleBorder(
-              borderRadius: BorderRadius.all(Radius.circular(5),
+              borderRadius: BorderRadius.all(
+                Radius.circular(5),
               ),
             ),
             // primary: bgColor != null ? bgColor : AppThemePreferences().appTheme.cardColor,
@@ -154,11 +156,16 @@ class ShortSocialLoginButtonWidget extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(iconImagePath, width: iconImageWidth, height: iconImageHeight),
+              Image.asset(iconImagePath,
+                  width: iconImageWidth, height: iconImageHeight),
             ],
           ),
-
           style: ElevatedButton.styleFrom(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(11), // <-- Radius
+              ),
+              backgroundColor: const Color(0xFFD9D9D9)),
+          /*style: ElevatedButton.styleFrom(
             side: BorderSide(color: Colors.grey[300]!),
             surfaceTintColor: Colors.transparent,
             elevation: 1.0,
@@ -166,7 +173,7 @@ class ShortSocialLoginButtonWidget extends StatelessWidget {
             shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(5)),
             ),
-          ),
+          ),*/
         ),
       ),
     );

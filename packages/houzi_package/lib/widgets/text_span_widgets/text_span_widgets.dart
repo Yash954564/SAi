@@ -5,23 +5,25 @@ import 'package:houzi_package/files/app_preferences/app_preferences.dart';
 TextSpan GenericNormalTextSpanWidget({
   required String text,
   List<InlineSpan>? children,
+  TextStyle? textStyle,
   Function()? onTap,
 }){
   return TextSpan(
     text: text,
-    style: AppThemePreferences().appTheme.bodyTextStyle,
+    style: textStyle ?? AppThemePreferences().appTheme.bodyTextStyle,
     recognizer: TapGestureRecognizer()..onTap = onTap,
   );
 }
 
 TextSpan GenericLinkTextSpanWidget({
   required String text,
+  TextStyle? textStyle,
   Function()? onTap,
   List<InlineSpan>? children,
 }){
   return TextSpan(
     text: text,
-    style: AppThemePreferences().appTheme.linkTextStyle,
+    style: textStyle ?? AppThemePreferences().appTheme.linkTextStyle,
     recognizer: TapGestureRecognizer()..onTap = onTap,
     children: children,
   );

@@ -111,44 +111,123 @@ class UserSignInState extends State<UserSignIn> with ValidationMixin {
       child: GestureDetector(
         onTap: () => FocusScope.of(context).requestFocus(FocusNode()),
         child: Scaffold(
-          appBar: AppBarWidget(
-            onBackPressed: onBackPressed,
-            automaticallyImplyLeading:
-                widget.fromBottomNavigator ? false : true,
-            appBarTitle: UtilityMethods.getLocalizedString("login"),
-          ),
-          body: SingleChildScrollView(
+          resizeToAvoidBottomInset: true,
+          body: NestedScrollView(
+            physics: const BouncingScrollPhysics(),
             scrollDirection: Axis.vertical,
-            child: Form(
-              key: formKey,
-              child: Stack(
+            headerSliverBuilder:
+                (BuildContext context, bool innerBoxIsScrolled) {
+              return [
+                SliverAppBar(
+                  expandedHeight: 290.0,
+                  floating: false,
+                  pinned: false,
+                  snap: false,
+                  shadowColor: const Color(0xFF221C1C),
+                  backgroundColor: const Color(0xFF221C1C),
+                  actionsIconTheme: const IconThemeData(opacity: 0.0),
+                  // This is the trick. Here, you should use a Stack instead of FlexibleSpaceBar.
+                  flexibleSpace: Stack(
+                    children: <Widget>[
+                      Container(
+                        clipBehavior: Clip.antiAlias,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(
+                              16), // Adjust the radius as needed
+                        ),
+                        child: Positioned.fill(
+                            child: Image.asset(
+                          "assets/settings/login_bg.png",
+                          fit: BoxFit.scaleDown,
+                        )),
+                      )
+                    ],
+                  ),
+                ),
+                const SliverPadding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0),
+                ),
+              ];
+            },
+            body: Container(
+              decoration: const BoxDecoration(
+                color: Color(0xFF221C1C),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Padding(
-                    padding: (UtilityMethods.showTabletView)
-                        ? const EdgeInsets.only(left: 150.0, top: 100, right: 150)
-                        : const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                    child: AutofillGroup(
-                      child: Column(
-                        children: [
-                          addEmail(),
-                          addPassword(),
-                          buttonSignInWidget(),
-                          DoNotHaveAnAccountTextWidget(),
-                          ForgotPasswordTextWidget(),
-                          SocialSignOnButtonsWidget(
-                            onAppleButtonPressed: _signInWithApple,
-                            onFaceBookButtonPressed: _facebookSignOnMethod,
-                            onGoogleButtonPressed: _googleSignOnMethod,
-                            onPhoneButtonPressed: navigateToPhoneNumberScreen,
-                            isiOSConditionsFulfilled: isiOSConditionsFulfilled,
-                          ),
-                        ],
+                  const Padding(
+                    padding: EdgeInsets.only(left: 46.0),
+                    child: Row(
+                      children: [
+                        Text("Let’s",
+                            style: TextStyle(
+                              fontSize: 25,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.tealAccent,
+                            )),
+                        Text(" Sign In",
+                            style: TextStyle(
+                              fontSize: 25,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.white,
+                            )),
+                      ],
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(left: 46.0),
+                    child: Text(
+                      "Let’s Connect to find Your Dream Property",
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.white,
                       ),
                     ),
                   ),
-                  LoginWaitingWidget(showWidget: _showWaitingWidget),
-                  LoginBottomActionBarWidget(
-                      internetConnection: isInternetConnected),
+                  Form(
+                    key: formKey,
+                    child: Stack(
+                      children: [
+                        Padding(
+                          padding: (UtilityMethods.showTabletView)
+                              ? const EdgeInsets.only(
+                                  left: 150.0, top: 100, right: 150)
+                              : const EdgeInsets.fromLTRB(46, 10, 20, 10),
+                          child: AutofillGroup(
+                            child: Column(
+                              children: [
+                                addEmail(),
+                                addPassword(),
+                                buttonSignInWidget(),
+                                const ForgotPasswordTextWidget(),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 20.0),
+                                  child: Image.asset(
+                                    "assets/icon/login_or_separator.png",
+                                  ),
+                                ),
+                                SocialSignOnButtonsWidget(
+                                  onAppleButtonPressed: _signInWithApple,
+                                  onFaceBookButtonPressed:
+                                      _facebookSignOnMethod,
+                                  onGoogleButtonPressed: _googleSignOnMethod,
+                                  onPhoneButtonPressed:
+                                      navigateToPhoneNumberScreen,
+                                  isiOSConditionsFulfilled:
+                                      isiOSConditionsFulfilled,
+                                ),
+                                const DoNotHaveAnAccountTextWidget(),
+                              ],
+                            ),
+                          ),
+                        ),
+                        LoginWaitingWidget(showWidget: _showWaitingWidget),
+                        LoginBottomActionBarWidget(
+                            internetConnection: isInternetConnected),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -162,69 +241,138 @@ class UserSignInState extends State<UserSignIn> with ValidationMixin {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => UserPhoneNumberPage(),
+        builder: (context) => const UserPhoneNumberPage(),
       ),
     );
   }
 
   Widget addEmail() {
-    return TextFormFieldWidget(
-      padding: const EdgeInsets.only(top: 15),
-      labelText: UtilityMethods.getLocalizedString("user_name_email"),
-      hintText: UtilityMethods.getLocalizedString(
-          "enter_the_email_address_or_user_name"),
-      keyboardType: TextInputType.text,
-      validator: (value) {
-        if (value == null || value.isEmpty) {
-          return UtilityMethods.getLocalizedString(
-              "this_field_cannot_be_empty");
-        }
-        return null;
-      },
-      autofillHints: const [AutofillHints.username],
-      onSaved: (String? value) {
-        if (mounted)
-          setState(() {
-            usernameEmail = value!;
-          });
-      },
+    return Container(
+      margin: const EdgeInsets.only(top: 30),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(8),
+        gradient: const LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomRight,
+            stops: [
+              0.0,
+              0.9
+            ],
+            colors: [
+              Color(0xffcacaca),
+              Color(0xff8e8e8e),
+            ]),
+      ),
+      child: TextFormFieldWidget(
+        borderRadius: BorderRadius.zero,
+        suffixIcon: const Icon(
+          size: 22.0,
+          Icons.email_outlined,
+          color: Colors.black,
+        ),
+        hintTextStyle: const TextStyle(
+          color: Colors.black,
+          fontWeight: FontWeight.w600,
+          fontSize: 12,
+        ),
+        labelTextStyle: const TextStyle(
+          color: Colors.black,
+          fontWeight: FontWeight.w600,
+          fontSize: 12,
+        ),
+        focusedBorderColor: Colors.transparent,
+        keyboardType: TextInputType.text,
+        hideBorder: true,
+        validator: (value) {
+          if (value == null || value.isEmpty) {
+            return UtilityMethods.getLocalizedString(
+                "this_field_cannot_be_empty");
+          }
+          return null;
+        },
+        autofillHints: const [AutofillHints.username],
+        onSaved: (String? value) {
+          if (mounted)
+            setState(() {
+              usernameEmail = value!;
+            });
+        },
+      ),
     );
   }
 
   Widget addPassword() {
-    return TextFormFieldWidget(
-      padding: const EdgeInsets.only(top: 15),
-      labelText: UtilityMethods.getLocalizedString("password"),
-      hintText: UtilityMethods.getLocalizedString("enter_your_password"),
-      obscureText: obscure,
-      validator: (value) => validatePassword(value),
-      suffixIcon: GestureDetector(
-        onTap: () {
+    return Container(
+      margin: EdgeInsets.only(top: 27),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(8),
+        gradient: const LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomRight,
+            stops: [
+              0.0,
+              0.9
+            ],
+            colors: [
+              Color(0xffcacaca),
+              Color(0xff8e8e8e),
+            ]),
+      ),
+      child: TextFormFieldWidget(
+        hideBorder: true,
+        hintTextStyle: const TextStyle(
+          color: Colors.black,
+          fontWeight: FontWeight.w600,
+          fontSize: 12,
+        ),
+        labelTextStyle: const TextStyle(
+          color: Colors.black,
+          fontWeight: FontWeight.w600,
+          fontSize: 12,
+        ),
+        obscureText: obscure,
+        validator: (value) => validatePassword(value),
+        suffixIcon: GestureDetector(
+          onTap: () {
+            if (mounted)
+              setState(() {
+                obscure = !obscure;
+              });
+          },
+          child: Icon(
+            size: 22,
+            color: Colors.black,
+            obscure
+                ? AppThemePreferences.visibilityIcon
+                : AppThemePreferences.invisibilityIcon,
+          ),
+        ),
+        autofillHints: const [AutofillHints.password],
+        onSaved: (String? value) {
           if (mounted)
             setState(() {
-              obscure = !obscure;
+              password = value!;
             });
         },
-        child: Icon(
-          obscure
-              ? AppThemePreferences.visibilityIcon
-              : AppThemePreferences.invisibilityIcon,
-        ),
       ),
-      autofillHints: const [AutofillHints.password],
-      onSaved: (String? value) {
-        if (mounted)
-          setState(() {
-            password = value!;
-          });
-      },
     );
   }
 
   Widget buttonSignInWidget() {
     return Container(
-      padding: const EdgeInsets.only(top: 30),
+      height: 63.0,
+      decoration: const BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(10)),
+          gradient: LinearGradient(
+              colors: [Color(0xff00e3e3), Color(0xff009999)],
+              begin: Alignment.topRight,
+              end: Alignment.bottomRight)),
+      margin: const EdgeInsets.only(top: 30),
       child: ButtonWidget(
+          color: Colors.transparent,
+          buttonStyle: ElevatedButton.styleFrom(
+              backgroundColor: Colors.transparent,
+              shadowColor: Colors.transparent),
           text: UtilityMethods.getLocalizedString("login"),
           onPressed: () {
             TextInput.finishAutofillContext();
@@ -339,7 +487,7 @@ class UserSignInState extends State<UserSignIn> with ValidationMixin {
         oneSignalLoginFunc(userEmail);
 
         Navigator.of(context).pushAndRemoveUntil(
-            MaterialPageRoute(builder: (context) => MyHomePage()),
+            MaterialPageRoute(builder: (context) => const MyHomePage()),
             (Route<dynamic> route) => false);
       } else {
         _showToast(
@@ -608,7 +756,7 @@ class UserSignInState extends State<UserSignIn> with ValidationMixin {
       oneSignalLoginFunc(userEmail);
 
       UtilityMethods.navigateToRouteByPushAndRemoveUntil(
-          context: context, builder: (context) => MyHomePage());
+          context: context, builder: (context) => const MyHomePage());
     }
   }
 }
@@ -621,6 +769,16 @@ class DoNotHaveAnAccountTextWidget extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.only(top: 30),
       child: GenericLinkWidget(
+        preLinkTextStyle: const TextStyle(
+            color: Colors.white,
+            fontSize: 12,
+            fontWeight: FontWeight.w400,
+            fontFamily: 'Lato'),
+        linkTextStyle: const TextStyle(
+            color: Color(0xFF0c5782),
+            fontSize: 12,
+            fontWeight: FontWeight.w600,
+            fontFamily: 'Lato'),
         preLinkText:
             UtilityMethods.getLocalizedString("do_not_have_an_account"),
         linkText: UtilityMethods.getLocalizedString("sign_up_capital"),
@@ -639,8 +797,18 @@ class ForgotPasswordTextWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(top: 15),
+      padding: const EdgeInsets.only(top: 14),
       child: GenericLinkWidget(
+        preLinkTextStyle: const TextStyle(
+            color: Colors.white,
+            fontSize: 12,
+            fontWeight: FontWeight.w600,
+            fontFamily: 'Lato'),
+        linkTextStyle: const TextStyle(
+            color: Colors.teal,
+            fontSize: 12,
+            fontWeight: FontWeight.w600,
+            fontFamily: 'Lato'),
         linkText: UtilityMethods.getLocalizedString(
             "forgot_password_with_question_mark"),
         onLinkPressed: () {

@@ -78,7 +78,7 @@ class HooksV2 implements HooksV2Interface {
     FontsHook fontsHook = (Locale locale) {
       // return "Ubuntu";
       // return "Qwitcher_Grypen";
-      return "";
+      return "Lato";
     };
 
     return fontsHook;
@@ -1112,7 +1112,7 @@ class HooksV2 implements HooksV2Interface {
   @override
   DefaultAppThemeModeHook? getDefaultAppThemeModeHook() {
     DefaultAppThemeModeHook defaultAppThemeModeHook = () {
-      return "light";
+      return "dark";
     };
 
     return defaultAppThemeModeHook;

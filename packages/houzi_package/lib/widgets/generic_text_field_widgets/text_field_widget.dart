@@ -178,6 +178,7 @@ class _TextFormFieldWidgetState extends State<TextFormFieldWidget> {
                     AppThemePreferences.globalRoundedCornersRadius),
               ),
               child: TextFormField(
+                style: labelTextStyle,
                 scrollPadding: widget.scrollPadding ?? const EdgeInsets.all(20.0),
                 maxLength: widget.maxLength,
                 focusNode: widget.focusNode,

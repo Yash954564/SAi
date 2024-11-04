@@ -8,6 +8,9 @@ class GenericLinkWidget extends StatelessWidget {
   final String linkText;
   final void Function() onLinkPressed;
   final StrutStyle? strutStyle;
+  final TextStyle? preLinkTextStyle;
+  final TextStyle? postLinkTextStyle;
+  final TextStyle? linkTextStyle;
 
   const GenericLinkWidget({
     Key? key,
@@ -15,6 +18,9 @@ class GenericLinkWidget extends StatelessWidget {
     required this.onLinkPressed,
     this.preLinkText,
     this.postLinkText,
+    this.preLinkTextStyle,
+    this.postLinkTextStyle,
+    this.linkTextStyle,
     this.strutStyle = const StrutStyle(forceStrutHeight: true, height: 1.5),
   }) : super(key: key);
 
@@ -23,22 +29,22 @@ class GenericLinkWidget extends StatelessWidget {
     return RichText(
       strutStyle: strutStyle,
       text: TextSpan(
-        // style: AppThemePreferences().appTheme.body01TextStyle,
-        // style: TextStyle(
-        //   fontFamily: Theme.of(context).textTheme.bodyText1!.fontFamily!,
-        // ),
-
         children: [
-          if(preLinkText != null && preLinkText!.isNotEmpty)
-            GenericNormalTextSpanWidget(text: preLinkText!),
-
+          if (preLinkText != null && preLinkText!.isNotEmpty)
+            GenericNormalTextSpanWidget(
+              text: preLinkText!,
+              textStyle: preLinkTextStyle,
+            ),
           GenericLinkTextSpanWidget(
             text: " $linkText",
+            textStyle: linkTextStyle,
             onTap: onLinkPressed,
           ),
-
-          if(postLinkText != null && postLinkText!.isNotEmpty)
-            GenericNormalTextSpanWidget(text: postLinkText!),
+          if (postLinkText != null && postLinkText!.isNotEmpty)
+            GenericNormalTextSpanWidget(
+              text: postLinkText!,
+              textStyle: postLinkTextStyle,
+            ),
         ],
       ),
     );
@@ -50,12 +56,18 @@ class GenericInlineLinkWidget extends StatelessWidget {
   final String linkText;
   final void Function() onLinkPressed;
   final StrutStyle? strutStyle;
+  final TextStyle? preLinkTextStyle;
+  final TextStyle? postLinkStyle;
+  final TextStyle? linkTextStyle;
 
   const GenericInlineLinkWidget({
     Key? key,
     required this.text,
     required this.linkText,
     required this.onLinkPressed,
+    this.preLinkTextStyle,
+    this.postLinkStyle,
+    this.linkTextStyle,
     this.strutStyle = const StrutStyle(forceStrutHeight: true, height: 1.5),
   }) : super(key: key);
 
@@ -66,16 +78,14 @@ class GenericInlineLinkWidget extends StatelessWidget {
     return RichText(
       strutStyle: strutStyle,
       text: TextSpan(
-        // style: TextStyle(
-        //   fontFamily: Theme.of(context).textTheme.bodyText1!.fontFamily!,
-        // ),
         children: [
-          GenericNormalTextSpanWidget(text: pieces.first),
+          GenericNormalTextSpanWidget(text: pieces.first, textStyle: preLinkTextStyle),
           GenericLinkTextSpanWidget(
             text: linkText,
             onTap: onLinkPressed,
+            textStyle: linkTextStyle
           ),
-          GenericNormalTextSpanWidget(text: pieces.last),
+          GenericNormalTextSpanWidget(text: pieces.last, textStyle: postLinkStyle),
         ],
       ),
     );

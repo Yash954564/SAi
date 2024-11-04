@@ -52,6 +52,7 @@ flutter:
     - assets/settings/dummy_property_image_01.jpg
     - assets/settings/dummy_property_image_02.jpg
     - assets/settings/dummy_property_image_03.jpg
+    - assets/settings/login_bg.png
     - assets/icon/apple_logo_dark.png
     - assets/icon/apple_logo_light.png
     - assets/icon/facebook_logo.png
@@ -60,6 +61,7 @@ flutter:
     - assets/icon/whatsapp-logo.png
     - assets/icon/line.png
     - assets/icon/telegram.png
+    - assets/icon/login_or_separator.png
 
     - assets/localization/en_localization.json
     - assets/localization/ur_localization.json
@@ -103,4 +105,12 @@ flutter:
       fonts:
         - asset: fonts/Qwitcher_Grypen/QwitcherGrypen-Bold.ttf
         - asset: fonts/Qwitcher_Grypen/QwitcherGrypen-Regular.ttf
+
+    - family: Lato
+      fonts:
+        - asset: fonts/Lato/Lato-Bold.ttf
+        - asset: fonts/Lato/Lato-Regular.ttf
+        - asset: fonts/Lato/Lato-Italic.ttf
+        - asset: fonts/Lato/Lato-Black.ttf
+        - asset: fonts/Lato/Lato-Light.ttf
 

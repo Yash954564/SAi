@@ -30,29 +30,33 @@ class SocialSignOnButtonsWidget extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 30.0),
             child: Column(
               children: [
-                SHOW_LOGIN_WITH_PHONE
-                    ? PhoneSignOnButtonWidget(onPressed: onPhoneButtonPressed)
-                    : Container(),
-
                 isiOSConditionsFulfilled
                     ? AppleSignOnButtonWidget(onPressed: onAppleButtonPressed)
                     : Container(),
-
                 if (SHOW_LOGIN_WITH_GOOGLE && SHOW_LOGIN_WITH_FACEBOOK)
                   Row(
                     children: [
                       Expanded(
-                          flex: 9,
-                          child: SHOW_LOGIN_WITH_GOOGLE
-                              ? GoogleSignOnButtonWidget(
-                                  shortButtonWidget: true,
-                                  onPressed: onGoogleButtonPressed,
-                                )
-                              : Container(),
+                        flex: 3,
+                        child: SHOW_LOGIN_WITH_GOOGLE
+                            ? GoogleSignOnButtonWidget(
+                                shortButtonWidget: true,
+                                onPressed: onGoogleButtonPressed,
+                              )
+                            : Container(),
                       ),
                       Expanded(child: Container()),
                       Expanded(
-                        flex: 9,
+                        flex: 3,
+                        child: SHOW_LOGIN_WITH_PHONE
+                            ? PhoneSignOnButtonWidget(
+                                shortButtonWidget: true,
+                                onPressed: onPhoneButtonPressed)
+                            : Container(),
+                      ),
+                      Expanded(child: Container()),
+                      Expanded(
+                        flex: 3,
                         child: SHOW_LOGIN_WITH_FACEBOOK
                             ? FaceBookSignOnButtonWidget(
                                 shortButtonWidget: true,
@@ -65,10 +69,11 @@ class SocialSignOnButtonsWidget extends StatelessWidget {
                 else if (SHOW_LOGIN_WITH_GOOGLE)
                   GoogleSignOnButtonWidget(onPressed: onGoogleButtonPressed)
                 else if (SHOW_LOGIN_WITH_FACEBOOK)
-                    FaceBookSignOnButtonWidget(onPressed: onFaceBookButtonPressed),
+                  FaceBookSignOnButtonWidget(
+                      onPressed: onFaceBookButtonPressed),
               ],
             ),
-    );
+          );
   }
 }
 
@@ -157,7 +162,7 @@ class PhoneSignOnButtonWidget extends StatelessWidget {
 
   const PhoneSignOnButtonWidget({
     Key? key,
-    this.shortButtonWidget = false,
+    this.shortButtonWidget = true,
     required this.onPressed,
     this.padding = const EdgeInsets.only(top: 20),
   }) : super(key: key);

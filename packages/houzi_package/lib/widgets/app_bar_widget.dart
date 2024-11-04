@@ -17,7 +17,7 @@ class AppBarWidget extends StatefulWidget implements PreferredSizeWidget {
   final Widget? title;
 
   AppBarWidget({
-  Key? key,
+    Key? key,
     required this.appBarTitle,
     this.onBackPressed,
     this.elevation = 1.0,
@@ -33,7 +33,8 @@ class AppBarWidget extends StatefulWidget implements PreferredSizeWidget {
 
   @override
   // TODO: implement preferredSize
-  Size get preferredSize => Size.fromHeight((toolbarHeight ?? kToolbarHeight) + (bottom?.preferredSize.height ?? 0));
+  Size get preferredSize => Size.fromHeight(
+      (toolbarHeight ?? kToolbarHeight) + (bottom?.preferredSize.height ?? 0));
 
   @override
   State<AppBarWidget> createState() => _AppBarWidgetState();
@@ -46,24 +47,40 @@ class _AppBarWidgetState extends State<AppBarWidget> {
       automaticallyImplyLeading: widget.automaticallyImplyLeading,
       systemOverlayStyle: SystemUiOverlayStyle(
           statusBarColor: AppThemePreferences().appTheme.genericStatusBarColor,
-          statusBarIconBrightness: AppThemePreferences().appTheme.genericStatusBarIconBrightness,
-          statusBarBrightness:AppThemePreferences().appTheme.statusBarBrightness
+          statusBarIconBrightness:
+              AppThemePreferences().appTheme.genericStatusBarIconBrightness,
+          statusBarBrightness:
+              AppThemePreferences().appTheme.statusBarBrightness),
+      flexibleSpace: Container(
+        decoration: const BoxDecoration(
+          gradient: RadialGradient(
+            center: Alignment(-6.0, -6.0), // near the top right
+            radius: 22.5,
+            colors: <Color>[
+              Color(0xff114767),
+              Color(0xFF133041),
+              Color(0xFF221C1C), // blue sky
+            ],
+            stops: <double>[0.6, 0.7, 1],
+          ),
+        ),
       ),
-      backgroundColor: widget.backgroundColor ?? AppThemePreferences().appTheme.primaryColor,
       leading: widget.automaticallyImplyLeading
           ? IconButton(
               icon: Icon(AppThemePreferences.arrowBackIcon),
               color: AppThemePreferences().appTheme.genericAppBarIconsColor,
-              onPressed: widget.onBackPressed ??
-                  () => onBackPressedFunc(context),
+              onPressed:
+                  widget.onBackPressed ?? () => onBackPressedFunc(context),
             )
           : Container(),
-      leadingWidth: widget.automaticallyImplyLeading ? widget.leadingWidth : 0.0,
-      title: widget.title ?? GenericTextWidget(
-        widget.appBarTitle,
-        strutStyle: const StrutStyle(height: 1),
-        style: AppThemePreferences().appTheme.genericAppBarTextStyle,
-      ),
+      leadingWidth:
+          widget.automaticallyImplyLeading ? widget.leadingWidth : 0.0,
+      title: widget.title ??
+          GenericTextWidget(
+            widget.appBarTitle,
+            strutStyle: const StrutStyle(height: 1),
+            style: AppThemePreferences().appTheme.genericAppBarTextStyle,
+          ),
       centerTitle: widget.centerTitle,
       actions: widget.actions,
       bottom: widget.bottom,

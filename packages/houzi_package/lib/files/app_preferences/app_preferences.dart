@@ -847,7 +847,7 @@ class AppThemePreferences {
 
   ///
   /// Google Sign-In Button Background color
-  static Color googleSignInButtonColorLight = Colors.white;
+  static Color googleSignInButtonColorLight = Color(0xFFD9D9D9);
 
   ///
   /// Apple Sign-In Button Background color
